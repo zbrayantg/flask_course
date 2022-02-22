@@ -1,0 +1,6 @@
+{% macro render_todo(todos) %}
+    {% for todo in todos %}
+        <h3>Actividad {{loop.index}}</h3>
+        <p>{{todo.to_dict().descripcion}}</p>
+    {% endfor %}
+{% endmacro %}
